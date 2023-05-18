@@ -99,7 +99,7 @@ const Nacrti = () => {
             <p onClick={() => (window.location.href = "/naziv-gradilista")}>
               Općenito
             </p>
-            <p onClick={() => (window.location.href = "/RadniZadaci")}>
+            <p onClick={() => (window.location.href = "/radni-zadaci")}>
               Radni zadaci
             </p>
             <p
@@ -111,7 +111,7 @@ const Nacrti = () => {
             <p onClick={() => (window.location.href = "/dokumenti")}>
               Dokumenti
             </p>
-            <p onClick={() => (window.location.href = "/RadniSati")}>
+            <p onClick={() => (window.location.href = "/radni-sati")}>
               Radni sati
             </p>
             <p>Materijalni troškovi</p>
@@ -119,7 +119,7 @@ const Nacrti = () => {
             <p>Prihodi</p>
           </div>
         </div>
-        <hr className="h" />
+        <hr className="h1" />
       </div>
       <div className="ground-plan-container">
         <div className="ground-plan-content">
