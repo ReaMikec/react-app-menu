@@ -1,0 +1,30 @@
+.employee-box {
+  border: #333 solid 1px;
+  border-radius: 4px;
+  width: 293px;
+  height: 166px;
+  margin-bottom: 10px;
+}
+.name-box {
+  padding: 10px 10px;
+}
+.info-box {
+  padding: 0 10px;
+}
+#em-name {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.box-info p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #898989;
+}
+.info-box {
+  margin: 5px 5px;
+}
+.box-name {
+  padding-left: 10px;
+}

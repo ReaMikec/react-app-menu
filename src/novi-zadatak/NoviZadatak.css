@@ -1,0 +1,88 @@
+.input-box-inputs {
+  margin: 10px 25px;
+}
+.back-part p {
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding-left: 10px;
+  transform: translateY(-110%);
+}
+.input-box-main {
+  display: flex;
+}
+.input-box-inputs {
+  width: 422px;
+}
+.project {
+  width: 80%;
+}
+.inputs3 select {
+  width: 422px;
+  background-color: #fff;
+  color: #7c7777;
+  border: solid 0.2px #7c7777;
+  border-radius: 5px;
+
+  height: 34px;
+  padding-left: 6px;
+  margin-right: 24px;
+  border-radius: 8px;
+}
+.settings1 p {
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding-left: 45px;
+  transform: translateY(70%);
+}
+.settings1 img {
+  padding-left: 25px;
+  transform: translateY(240%);
+}
+.settings1 h2 {
+  margin-left: 24px;
+  font-size: 32px;
+  padding-top: 24px;
+  color: #333333;
+}
+
+.zoom-container {
+  margin: 50px 50px;
+  border: 1px solid #e7e7e7e7;
+}
+.zoom-img {
+  position: relative;
+}
+.zoom-img1 {
+  padding-top: 20px;
+  transform: translateX(40%);
+}
+.project .zoom-container .zoom-img button {
+  display: flex;
+  transform: translateY(25%);
+  margin-left: 5px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+}
+.plus {
+  width: 22px;
+  height: 20px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+.minus {
+  width: 22px;
+  height: 20px;
+  padding-left: 7px;
+  padding-top: 2px;
+}
+#fullscreen img {
+  width: 20px;
+  height: 18px;
+}
+.full {
+  padding-top: 10px;
+}

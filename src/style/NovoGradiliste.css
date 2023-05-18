@@ -1,0 +1,231 @@
+.top-nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc436;
+  height: 48px;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.logo1 img {
+  width: 111px;
+  height: 24px;
+}
+
+.icon1 img {
+  height: 20px;
+  width: 16px;
+}
+.route1 {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  cursor: pointer;
+}
+.route1 p {
+  font-size: 14px;
+  font-weight: 700;
+}
+.route {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ffc436;
+  text-align: center;
+  margin-right: 4px;
+  border-radius: 360px;
+}
+
+.h {
+  margin-top: 24px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  height: 4px;
+}
+.hr {
+  border: none;
+  border-top: 1px solid #ffc436;
+  width: 90px;
+  margin: 12px;
+}
+.input-box {
+  margin: 20px 25px;
+}
+.input-box1 {
+  padding-top: 24px;
+  width: 422px;
+}
+.inputs p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #898989;
+}
+.inputs input {
+  margin-bottom: 16px;
+  font-size: 14px;
+  width: 422px;
+  height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.inputs1 {
+  display: flex;
+}
+
+.inputs1 p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #898989;
+}
+.inputs1 input {
+  font-size: 14px;
+}
+.inputs1 input {
+  padding-left: 8px;
+}
+.inputs input {
+  padding-left: 8px;
+}
+.inputs3 input {
+  padding-left: 8px;
+}
+
+.first1 input {
+  width: 199px;
+}
+.first input {
+  width: 199px;
+}
+.dotted-box {
+  border: dotted 4px #7c7777;
+  border-radius: 8px;
+  height: 152px;
+  text-align: center;
+  margin-bottom: 14px;
+  color: #333;
+}
+.dotted-box p {
+  font-weight: 400;
+  padding-top: 8px;
+}
+.dotted-box span {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#id {
+  padding-top: 10px;
+}
+.input-box3 {
+  width: 422px;
+}
+.inputs2 {
+  padding-top: 16px;
+  font-weight: 700;
+}
+.inputs2 p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.upload-button {
+  background-color: #333;
+  width: 422px;
+  height: 24px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+.inputs3 p {
+  margin-bottom: 4px;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #898989;
+}
+.inputs3 input {
+  margin-bottom: 16px;
+  width: 422px;
+  height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+#last {
+  height: 54px;
+}
+
+.inputs4 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.back {
+  background-color: #333;
+  width: 98px;
+  height: 32px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.save {
+  background-color: #ffc436;
+  width: 98px;
+  height: 32px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.backup-img {
+  border-radius: 360px;
+  border: 2px solid #ffc436;
+  width: 48px;
+  height: 48px;
+  margin-top: 20px;
+}
+.backup {
+  padding-left: 180px;
+}
+.backup-img img {
+  margin-top: 11.5px;
+}
+.MuiFormControl-root,
+.MuiTextField-root {
+  width: 200px;
+}
+.first1 {
+  transform: translateX(12%);
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 30px !important;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  width: 16px !important;
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  transform: translateX(20%) !important;
+}

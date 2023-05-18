@@ -1,0 +1,54 @@
+.grid-main {
+  margin: 0 40px;
+}
+
+.grid-header {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateX(180px);
+}
+
+.grid-content {
+  padding-top: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 24px;
+}
+
+.grid-header label {
+  font-size: 14px;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-row-label {
+  margin-right: 94px;
+  width: 145px;
+  margin-bottom: 28px;
+}
+
+.grid-header label:last-child {
+  margin-right: 0;
+}
+
+.grid-checkbox {
+  margin-right: 94px;
+}
+
+.grid-box {
+  transform: translateX(-74%);
+}
+.read {
+  transform: translateX(-90%);
+}
+.write {
+  transform: translateX(-90%);
+}
+.remove {
+  transform: translateX(-90%);
+}
