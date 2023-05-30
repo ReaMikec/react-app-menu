@@ -1,0 +1,101 @@
+.top-menu-short {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 75px;
+  transform: translateY(70%);
+  color: #333;
+  width: 42%;
+}
+.top-menu-short p {
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+}
+.top-menu-short p:first-child {
+  color: #ffc436;
+  border-bottom: solid #ffc436;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  width: 118px;
+  text-align: center;
+  margin-left: 2px;
+}
+.info-container {
+  margin: 25px 25px;
+  display: flex;
+}
+.employee-info {
+  padding-top: 20px;
+}
+.employee-info p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.employee-info span {
+  font-weight: 700;
+  color: #333;
+}
+.stats-report {
+  display: flex;
+  padding-left: 15px;
+}
+.stats-inputs {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.stats-input {
+  background-color: #fff;
+  color: #7c7777;
+  border: ridge 1px #7c7777;
+  border-radius: 5px;
+  width: 224px;
+  height: 34px;
+  padding-left: 6px;
+  margin-right: 24px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+/*CHARTS*/
+
+.stats-container {
+  transform: translateX(45%);
+}
+
+.apexcharts-legend-text {
+  font-size: 12px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  width: 80px !important;
+  margin-left: 10px !important;
+}
+.apexcharts-legend-marker {
+  width: 0px !important;
+  height: 20px !important;
+}
+.apexcharts-legend-series {
+  background-color: rgb(0, 143, 251) !important;
+  border-radius: 4px !important;
+}
+.apexcharts-legend-series[rel="2"] {
+  background-color: rgb(0, 227, 150) !important;
+  cursor: pointer;
+}
+.apexcharts-legend-series[rel="3"] {
+  background-color: rgb(254, 176, 25) !important;
+}
+.apexcharts-legend-series[rel="4"] {
+  background-color: rgb(255, 69, 96) !important;
+}
+.apexcharts-legend-series[rel="5"] {
+  background-color: rgb(119, 93, 208) !important;
+}
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center {
+  padding-left: 44px !important;
+}
+.css-1wvnaxz-MuiTableCell-root.MuiTableCell-head,
+.css-1nslmh4-MuiTableCell-root.MuiTableCell-head {
+  background-color: #333 !important;
+}

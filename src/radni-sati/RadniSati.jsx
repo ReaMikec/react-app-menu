@@ -148,7 +148,7 @@ const RadniSati = () => {
             <p onClick={() => (window.location.href = "/naziv-gradilista")}>
               Općenito
             </p>
-            <p onClick={() => (window.location.href = "/RadniZadaci")}>
+            <p onClick={() => (window.location.href = "/radni-zadaci")}>
               Radni zadaci
             </p>
             <p onClick={() => (window.location.href = "/Nacrti")}>Nacrti</p>

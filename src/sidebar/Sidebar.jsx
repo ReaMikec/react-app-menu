@@ -76,7 +76,11 @@ const Sidebar = ({ children }) => {
         className={`sidebar`}
       >
         <div className="top_section">
-          <p style={{ display: isOpen ? "block" : "none" }} className="close">
+          <p
+            onClick={toggle}
+            style={{ display: isOpen ? "block" : "none" }}
+            className="close"
+          >
             Zatvori menu
           </p>
           <div className="bars">

@@ -9,7 +9,7 @@
 }
 .top-menu2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   transform: translateY(80%);
   color: #333;
 }
@@ -68,7 +68,7 @@
 .project1 {
   padding-top: 65px;
   transform: translateX(-15%);
-  width: 960px;
+  width: 900px;
   height: 634px;
 }
 .zoom-img-container {

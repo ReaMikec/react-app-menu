@@ -20,7 +20,7 @@ import LocationModal from "../location-modal/LocationModal";
 
 const Nacrti = () => {
   const [scale, setScale] = useState(1);
-  const [initialSize] = useState({ width: 700, height: 400 });
+
   const handleZoomInClick = () => {
     setScale((scale) => scale + 0.1);
   };
@@ -28,7 +28,7 @@ const Nacrti = () => {
   const handleZoomOutClick = () => {
     setScale((scale) => scale - 0.1);
   };
-  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isFullscreen] = useState(false);
 
   const handleFullScreenClick = () => {
     const elem = document.querySelector(".zoom-img3 img");

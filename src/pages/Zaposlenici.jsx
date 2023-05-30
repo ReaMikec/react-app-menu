@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import EmployeeBox from "../employee-box/EmployeeBox";
+import CustomTable from "./CustomTable";
 import logo from "../assets/logo.png";
 import notifications from "../assets/notifications.png";
 import Ellipse from "../assets/Ellipse.png";
@@ -8,6 +9,8 @@ import ProfileDropdown from "../pages/ProfileDropdown";
 import Search from "../assets/search.png";
 import gridView from "../assets/grid_view.png";
 import tableChart from "../assets/table_chart.png";
+
+import TablePagination from "@mui/material/TablePagination";
 
 import "../style/Zaposlenici.css";
 
@@ -24,6 +27,7 @@ const Zaposlenici = () => {
     setIsTableView(true);
     setIsGridView(false);
   };
+
   const employees = [
     {
       name: "Mario Martić",
@@ -59,6 +63,19 @@ const Zaposlenici = () => {
     { length: 16 },
     (_, index) => employees[index % employees.length]
   );
+
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(5);
+
+  const handleChangePage = (newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+
   return (
     <div>
       <nav className="top-nav1">
@@ -120,19 +137,38 @@ const Zaposlenici = () => {
           </div>
         </div>
       </div>
-      <div className="grid_container">
-        {repeatedEmployees.map((employee, index) => (
-          <EmployeeBox
-            key={index}
-            name={employee.name}
-            position={employee.position}
-            department={employee.department}
-            phone={employee.phone}
-            email={employee.email}
-            image={employee.image}
-          />
-        ))}
-      </div>
+      {isTableView ? (
+        <CustomTable employees={repeatedEmployees} />
+      ) : (
+        <div
+          className="grid_container"
+          onClick={() => (window.location.href = "/employee-info")}
+        >
+          {repeatedEmployees
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+
+            .map((employee, index) => (
+              <EmployeeBox
+                key={index}
+                name={employee.name}
+                position={employee.position}
+                department={employee.department}
+                phone={employee.phone}
+                email={employee.email}
+                image={employee.image}
+              />
+            ))}
+        </div>
+      )}
+      <TablePagination
+        rowsPerPageOptions={[5, 10, 25]}
+        component="div"
+        count={repeatedEmployees.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
     </div>
   );
 };

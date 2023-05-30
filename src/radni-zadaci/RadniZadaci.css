@@ -1,6 +1,6 @@
 .top-menu1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   transform: translateY(80%);
 }
 .top-menu1 p {

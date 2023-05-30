@@ -22,6 +22,7 @@ import Nacrti from "./nacrti/Nacrti";
 import Dokumenti from "./dokumenti/Dokumenti";
 import RadniSati from "./radni-sati/RadniSati";
 import EditTable from "./edit-table/EditTable";
+import EmployeeInfo from "./employee-info/EmployeeInfo";
 
 import "./sidebar/App.css";
 
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/novi-zadatak" element={<NoviZadatak />} />
           <Route path="/zadatak" element={<Zadatak />} />
           <Route path="/dokumentacija" element={<Dokumentacija />} />
+          <Route path="/employee-info" element={<EmployeeInfo />} />
 
           <Route path="financije" element={<Financije />} />
           <Route path="tvrtka" element={<Tvrtka />} />

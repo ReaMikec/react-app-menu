@@ -17,13 +17,15 @@ import ProfileDropdown from "../pages/ProfileDropdown";
 import arrow from "../assets/arrow.png";
 import groundPlan from "../assets/groundPlan1.jpg";
 import screen from "../assets/screen.png";
+import locationOn from "../assets/locationOn.jpeg";
+import LocationModal from "../location-modal/LocationModal";
 
 const NoviZadatak = () => {
   const handleBackClick = () => {
     window.history.back();
   };
   const [scale, setScale] = useState(1);
-  const [initialSize] = useState({ width: 500, height: 500 });
+
   const handleZoomInClick = () => {
     setScale((scale) => scale + 0.1);
   };
@@ -42,6 +44,15 @@ const NoviZadatak = () => {
     }
   };
   const [value, setValue] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div>
@@ -163,17 +174,33 @@ const NoviZadatak = () => {
                 </button>
               </div>
               <MapInteractionCSS>
-                <div className="zoom-img1">
+                <div className="zoom-img3">
                   <img
                     src={groundPlan}
                     alt="Ground Plan"
                     style={{
                       transform: `scale(${scale})`,
-                      width: initialSize.width,
-                      height: initialSize.height,
+                      margin: "20px 120px",
+                      width: "600px",
+                      height: "460px",
                     }}
                   />
+                  <div className="location-wrapper">
+                    <div className="title_overlay">
+                      <button
+                        className="location-on-button"
+                        onClick={openModal}
+                      >
+                        <img
+                          src={locationOn}
+                          alt="Location On"
+                          id="location_on2"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
+                {isModalOpen && <LocationModal closeModal={closeModal} />}
               </MapInteractionCSS>
             </div>
           </div>

@@ -1,7 +1,5 @@
 import React from "react";
 
-import { MapInteractionCSS } from "react-map-interaction";
-
 import person from "../assets/person.png";
 import CalendarMonth from "../assets/calendar_month.png";
 import event from "../assets/event.png";
