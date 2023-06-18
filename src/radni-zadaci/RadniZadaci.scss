@@ -1,12 +1,37 @@
+@import "../style/Responsive.scss";
+
+.top-nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc436;
+  height: 48px;
+  @include mq-max($xs) {
+    flex-direction: column;
+    display: flex;
+  }
+}
 .top-menu1 {
   display: flex;
   justify-content: space-between;
-  transform: translateY(80%);
+  padding-top: 20px;
+  margin-right: 75px;
+  @include mq-max($xl) {
+    flex-wrap: wrap;
+    display: flex;
+  }
 }
 .top-menu1 p {
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
+  @include mq-max($lg) {
+    font-size: 12px;
+  }
+  @include mq-max($md) {
+    width: 50%;
+    margin-bottom: 5px;
+  }
 }
 .radni {
   color: #ffc436;
@@ -23,14 +48,25 @@
   margin: 22px 0;
   display: flex;
   justify-content: space-between;
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($mg) {
+    flex-direction: column;
+    display: flex;
+  }
 }
 .search-input1 {
   width: 320px;
   height: 34px;
   padding-left: 32px;
-  margin-left: 8px;
   border-radius: 8px;
   border: ridge 1px #7c7777;
+  @include mq-max($xs) {
+    margin-left: 0px;
+    width: 200px;
+  }
 }
 .search-container1 {
   position: relative;
@@ -48,6 +84,19 @@
   transform: translateY(25%);
   font-weight: 700;
   cursor: pointer;
+  @include mq-max($mg) {
+    margin-bottom: 10px;
+  }
+}
+.search-icon1 {
+  position: absolute;
+  transform: translateX(60%);
+}
+.view-type-container1 {
+  transform: translateY(22%);
+  @include mq-max($md) {
+    margin-left: 0px;
+  }
 }
 .back-part2 p {
   text-transform: uppercase;
@@ -90,6 +139,39 @@
   grid-gap: 24px;
   padding-top: 24px;
   width: 960px;
+  @include mq-max($lg) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+}
+.container1 {
+  display: flex;
+  @include mq-max($mg) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+}
+#item1 {
+  width: 109px;
+  height: 34px;
+  margin-right: 24px;
+  border-radius: 8px;
+  border: ridge 1px #7c7777;
+  margin-top: 5px;
+  background-color: white;
+  color: #7c7777;
+  padding-left: 8px;
+  @include mq-max($mg) {
+    margin-bottom: 5px;
+  }
 }
 .tasks-priority {
   display: block;

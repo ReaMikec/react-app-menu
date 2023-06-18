@@ -10,7 +10,6 @@
 .top-menu2 {
   display: flex;
   justify-content: space-between;
-  transform: translateY(80%);
   color: #333;
 }
 .top-menu2 p {

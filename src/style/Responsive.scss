@@ -1,0 +1,21 @@
+$xxs: 375;
+$xs: 480;
+$sm: 544;
+$md: 768;
+$mg: 900;
+$lg: 1100;
+$xl: 1200;
+$xxl: 1440;
+$xxxl: 1680;
+
+@mixin mq-min($min) {
+  @media (min-width: #{$min}px) {
+    @content;
+  }
+}
+
+@mixin mq-max($max) {
+  @media (max-width: #{$max}px) {
+    @content;
+  }
+}

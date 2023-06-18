@@ -1,10 +1,31 @@
+@import "Responsive.scss";
+
 .main {
   margin: 0 auto;
+}
+.container3 {
+  display: flex;
+
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($lg) {
+    display: flex;
+  }
 }
 .header {
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($xl) {
+    flex-direction: column;
+    display: flex;
+  }
 }
 .container h1 {
   font-size: 34px;
@@ -26,11 +47,11 @@
 
 .search-icon {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 6px;
-  width: 18px;
-  height: 18px;
+  top: 40%;
+  transform: translateX(100%);
+  @include mq-max($md) {
+    transform: translateX(220%);
+  }
 }
 
 .button {
@@ -43,13 +64,17 @@
   border-radius: 4px;
   transform: translateY(35%);
   font-weight: 700;
+
   cursor: pointer;
+  @include mq-max($md) {
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
 }
 
 .search-container {
   position: relative;
-  display: flex;
-  align-items: center;
+  padding-top: 8px;
 }
 
 .search-input-container {
@@ -61,11 +86,15 @@
 .search-input {
   width: 320px;
   height: 34px;
-  padding-left: 32px;
   margin-left: 8px;
   border-radius: 8px;
   border: ridge 1px #7c7777;
+  padding-left: 30px;
+  @include mq-max($md) {
+    margin-left: 25px;
+  }
 }
+
 /*icon grid and table*/
 .grid-view,
 .table-view {
@@ -89,15 +118,6 @@
   border-top-right-radius: 8px;
 }
 /*icon grid and table*/
-.search-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 6px;
-  width: 18px;
-  height: 18px;
-  padding-left: 8px;
-}
 
 .search-button {
   background-color: #ffc436;
@@ -120,7 +140,20 @@
   margin-right: 24px;
   border-radius: 8px;
   border: ridge 1px #7c7777;
-  margin-top: 6px;
+  margin-top: 10px;
+  background-color: white;
+  color: #7c7777;
+  padding-left: 8px;
+  @include mq-max($md) {
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  @include mq-max($lg) {
+    margin-left: 25px;
+  }
+  @include mq-max($xl) {
+    margin-left: 25px;
+  }
 }
 
 .grid-container1 {
@@ -130,6 +163,17 @@
   grid-gap: 24px;
   padding-left: 24px;
   padding-top: 24px;
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($lg) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include mq-max($xxl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid-item {
@@ -243,6 +287,9 @@
   color: #ffc436;
 }
 .view-type-container {
-  transform: translateY(18%);
+  transform: translateY(22%);
   padding-right: 25px;
+  @include mq-max($md) {
+    margin-left: 25px;
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 import logo from "../assets/logo.png";
-import "../style/Resursi.css";
+import "../style/Resursi.scss";
 import notifications from "../assets/notifications.png";
 import Ellipse from "../assets/Ellipse.png";
 import expandIcon from "../assets/expand_more.png";
@@ -12,7 +12,7 @@ import ProfileDropdown from "./ProfileDropdown";
 const Resursi = () => {
   return (
     <div>
-      <nav className="top-nav1">
+      <nav className="top-nav2">
         <div className="logo1">
           <img src={logo} alt="Logo" />
         </div>

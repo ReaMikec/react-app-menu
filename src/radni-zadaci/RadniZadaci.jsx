@@ -16,7 +16,7 @@ import gridView from "../assets/grid_view.png";
 import tableChart from "../assets/table_chart.png";
 
 import locationOn from "../assets/locationOn.jpeg";
-import "../radni-zadaci/RadniZadaci.css";
+import "../radni-zadaci/RadniZadaci.scss";
 import person from "../assets/person.png";
 import event from "../assets/event_available.png";
 
@@ -36,7 +36,7 @@ const RadniZadaci = () => {
 
   return (
     <div className="container-main">
-      <nav className="top-nav1">
+      <nav className="top-nav2">
         <div className="logo1">
           <img src={logo} alt="Logo" />
         </div>
@@ -110,18 +110,18 @@ const RadniZadaci = () => {
               Novi zadatak
             </button>
           </div>
-          <div className="container">
-            <select name="item" id="item" placeholder="Status">
+          <div className="container1">
+            <select name="item" id="item1" placeholder="Status">
               <option value="status">Sort</option>
             </select>
             <div className="search-container1">
               <div className="search-input-container">
                 <input className="search-input1" placeholder="Pretraga"></input>
-                <img src={Search} alt="" className="search-icon" />
+                <img src={Search} alt="" className="search-icon1" />
                 <button className="search-button">Pretraži</button>
               </div>
             </div>
-            <div className="view-type-container">
+            <div className="view-type-container1">
               <button
                 onClick={handleGridViewClick}
                 className={`grid-view ${

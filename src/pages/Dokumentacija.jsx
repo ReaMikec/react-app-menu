@@ -1,7 +1,7 @@
 import React from "react";
 
 import logo from "../assets/logo.png";
-import "../style/Dokumentacija.css";
+import "../style/Dokumentacija.scss";
 import notifications from "../assets/notifications.png";
 import Backup from "../assets/backup.png";
 

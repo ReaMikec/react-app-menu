@@ -18,7 +18,7 @@ import houseSiding from "../assets/house_siding.png";
 import CustomTable from "./CustomTable";
 import ProfileDropdown from "./ProfileDropdown";
 
-import "../style/Gradilista.css";
+import "../style/Gradilista.scss";
 
 const Gradilista = () => {
   const [isGridView, setIsGridView] = useState(true);
@@ -37,7 +37,7 @@ const Gradilista = () => {
   return (
     <div className="head">
       <div className="main">
-        <nav className="top-nav1">
+        <nav className="top-nav2">
           <div className="logo1">
             <img src={logo} alt="Logo" />
           </div>
@@ -48,7 +48,7 @@ const Gradilista = () => {
           </div>
         </nav>
         <div className="header">
-          <div className="container">
+          <div className="container3">
             <h1>Moja gradilišta</h1>
             <button
               className="button"
@@ -57,7 +57,7 @@ const Gradilista = () => {
               Novo gradilište
             </button>
           </div>
-          <div className="container">
+          <div className="container3">
             <select name="item" id="item" placeholder="Status">
               <option value="status">Status</option>
             </select>

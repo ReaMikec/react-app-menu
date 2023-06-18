@@ -24,7 +24,7 @@ import RadniSati from "./radni-sati/RadniSati";
 import EditTable from "./edit-table/EditTable";
 import EmployeeInfo from "./employee-info/EmployeeInfo";
 
-import "./sidebar/App.css";
+import "./sidebar/App.scss";
 
 const App = () => {
   return (

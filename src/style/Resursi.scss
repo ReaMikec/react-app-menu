@@ -1,3 +1,5 @@
+@import "Responsive.scss";
+
 .top-nav1 {
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,10 @@
   display: flex;
   justify-content: space-between;
   width: 500px;
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
 }
 .links p {
   text-transform: uppercase;

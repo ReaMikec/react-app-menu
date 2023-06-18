@@ -1,15 +1,26 @@
+@import "../style/Responsive.scss";
+
 .top-menu-short {
   display: flex;
   justify-content: space-between;
   margin-right: 75px;
-  transform: translateY(70%);
   color: #333;
   width: 42%;
+  @include mq-max($xxl) {
+    width: 50%;
+  }
+  @include mq-max($lg) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .top-menu-short p {
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
+  @include mq-max($lg) {
+    margin-bottom: 5px;
+  }
 }
 .top-menu-short p:first-child {
   color: #ffc436;
@@ -62,6 +73,11 @@
 
 .stats-container {
   transform: translateX(45%);
+  @include mq-max($lg) {
+  }
+  @include mq-max($xl) {
+    transform: translateX(5%);
+  }
 }
 
 .apexcharts-legend-text {

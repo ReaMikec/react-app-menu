@@ -14,7 +14,7 @@ import arrow from "../assets/arrow.png";
 import ProfileDropdown from "../pages/ProfileDropdown";
 import Circle from "../circle/Circle";
 
-import "./NazivGradilista.css";
+import "./NazivGradilista.scss";
 
 const NazivGradilista = () => {
   const [employees, setEmployees] = useState([]);
@@ -43,7 +43,7 @@ const NazivGradilista = () => {
 
   return (
     <div className="hidden">
-      <nav className="top-nav1">
+      <nav className="top-nav2">
         <div className="logo1">
           <img src={logo} alt="Logo" />
         </div>
@@ -160,12 +160,6 @@ const NazivGradilista = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="des">
-          <p id="info1">Opis projekta</p>
-          <p>
-            <span>Obiteljska stambena zgrada</span>
-          </p>
         </div>
       </div>
     </div>

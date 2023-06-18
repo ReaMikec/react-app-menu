@@ -1,3 +1,33 @@
+@import "Responsive.scss";
+
+.view-type-container1 {
+  transform: translateY(22%);
+  padding-right: 25px;
+  @include mq-max($md) {
+    padding-right: 0px;
+    display: flex;
+    margin-left: 25px;
+  }
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  @include mq-max($md) {
+    flex-direction: column;
+    display: flex;
+  }
+  @include mq-max($xl) {
+    flex-direction: column;
+    display: flex;
+  }
+}
+.container3 {
+  @include mq-min($lg) {
+    display: flex;
+  }
+}
+
 .name-box {
   display: flex;
 }
@@ -22,6 +52,12 @@
   grid-template-columns: repeat(4, 1fr);
   padding-top: 24px;
   margin-left: 25px;
+  @include mq-max($xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq-max($md) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
   padding-right: 35px !important;

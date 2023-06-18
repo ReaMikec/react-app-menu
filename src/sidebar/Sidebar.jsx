@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import icon from "../assets/expand_less.png";
-import "./App.css";
+import "./App.scss";
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);

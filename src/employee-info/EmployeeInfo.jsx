@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
-import "../employee-info/EmployeeInfo.css";
+import "../employee-info/EmployeeInfo.scss";
 import notifications from "../assets/notifications.png";
 import Ellipse from "../assets/Ellipse.png";
 import ProfileDropdown from "../pages/ProfileDropdown";

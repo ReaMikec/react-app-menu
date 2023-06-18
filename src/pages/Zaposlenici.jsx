@@ -12,7 +12,7 @@ import tableChart from "../assets/table_chart.png";
 
 import TablePagination from "@mui/material/TablePagination";
 
-import "../style/Zaposlenici.css";
+import "../style/Zaposlenici.scss";
 
 const Zaposlenici = () => {
   const [isGridView, setIsGridView] = useState(true);
@@ -78,7 +78,7 @@ const Zaposlenici = () => {
 
   return (
     <div>
-      <nav className="top-nav1">
+      <nav className="top-nav2">
         <div className="logo1">
           <img src={logo} alt="Logo" />
         </div>
@@ -88,8 +88,8 @@ const Zaposlenici = () => {
           <ProfileDropdown />
         </div>
       </nav>
-      <div className="header">
-        <div className="container">
+      <div className="header1">
+        <div className="container3">
           <h1>Moja gradilišta</h1>
           <button
             className="button"
@@ -98,7 +98,7 @@ const Zaposlenici = () => {
             Novo gradilište
           </button>
         </div>
-        <div className="container">
+        <div className="container3">
           <select name="item" id="item" placeholder="Status">
             <option value="status">Status</option>
           </select>
@@ -109,7 +109,7 @@ const Zaposlenici = () => {
               <button className="search-button">Pretraži</button>
             </div>
           </div>
-          <div className="view-type-container">
+          <div className="view-type-container1">
             <button
               onClick={handleGridViewClick}
               className={`grid-view ${
